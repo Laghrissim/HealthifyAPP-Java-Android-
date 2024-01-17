@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mobilepfe"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".programActivity.CompetitionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SportActivities.ListSportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SportActivities.SportActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao" />
+
+        <activity android:name=".profileActivities.EditProfilActivity"
+                 android:exported="false"
+            />
+
+
+        <activity android:name=".profileActivities.metricprofil"
+            android:exported="false"
+            />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".profileActivities.ProfilActivity"
+            android:exported="true" />
+        <activity
+            android:name=".programActivity.ListVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".programActivity.ListEquipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".programActivity.AddCompetitionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".programActivity.ListCompetitionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".programActivity.ChoixProgramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".programActivity.UploadProgramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".programActivity.ProgramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".programActivity.ListProgramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.VideoActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".UI.CoachVideos"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".UI.CoachWorkout"
+            android:exported="false" />
+        <activity
+            android:name=".UI.CoachContent"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".matchActivities.ShowMatches"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".ResultActivity.ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CoachPlanningActivity.CoachPlanActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".notificationActivities.notification"
+            android:label="notification"
+            android:exported="false"/>
+        <activity
+            android:name=".TeamActivity.TeamActivity"
+            android:label=""
+            android:exported="false"/>
+        <activity
+            android:name=".TeamActivity.Teamprofilactivity"
+            android:label=""
+            android:exported="false"/>
+        <activity
+            android:name=".TeamActivity.listteamactivity"
+            android:label=""
+            android:exported="false"/>
+        <activity
+            android:name=".UI.MainActivity"
+            android:label="GroupActivity"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name=".UI.FriendsFragment"
+            android:label="GroupActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".UI.FindFriends"
+            android:label="GroupActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".UI.FindCoaches"
+            android:label="GroupActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".UI.CoachesFragment"
+            android:label="GroupActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".UI.TeamsFragment"
+            android:label="GroupActivity"
+            android:exported="false"/>
+
+
+
+        <activity
+            android:name=".TeamActivity.ItemActivity"
+            android:label="TeamActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".GroupChatActivity.GroupChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroupChatActivity.GroupChatProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroupChatActivity.StarredMessagesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.mobile_pfe.GroupChatActivity.MediaMessagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".registerActivities.register1_choosePorfile"
+            android:exported="false" />
+        <activity
+            android:name=".GroupActivity.GroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroupActivity.listgroupactivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroupActivity.ItemActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".loginActivities.login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".registerActivities.RegisterActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>
